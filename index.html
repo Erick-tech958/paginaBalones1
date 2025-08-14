@@ -1,52 +1,76 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menú Principal</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .container {
-            text-align: center;
-            background-color: white;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            color: #333;
-        }
-        .btn {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 15px 30px;
-            font-size: 18px;
-            color: white;
-            background-color: #007BFF;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        .btn:hover {
-            background-color: #0056b3;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menú Principal - Bien Chido Sports</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #1a1a2e, #16213e);
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      color: #feca57;
+      text-shadow: 0 0 10px rgba(254, 202, 87, 0.5);
+    }
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+      width: 100%;
+    }
+    .btn {
+      display: block;
+      width: 200px;
+      padding: 1.5rem 1rem;
+      font-size: 1.3rem;
+      font-weight: bold;
+      text-align: center;
+      border-radius: 15px;
+      text-decoration: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    }
+    .btn-balones {
+      background: #48dbfb;
+      color: #fff;
+    }
+    .btn-erick {
+      background: #1dd1a1;
+      color: #fff;
+    }
+    .btn-saul {
+      background: #feca57;
+      color: #333;
+    }
+    .btn:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.4);
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Bienvenido al Menú</h1>
-        <p>Haz clic en el botón para ver los tipos de balones.</p>
-        <a href="balones.html" class="btn">Ver Tipos de Balones</a>
-    </div>
+  <h1>🏀⚽ Bien Chido Sports</h1>
+  <div class="buttons">
+    <a href="balones.html" class="btn btn-balones">Tipos de Balones</a>
+    <a href="erick.html" class="btn btn-erick">Erick</a>
+    <a href="saul.html" class="btn btn-saul">Saul</a>
+  </div>
 </body>
 </html>
