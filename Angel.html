@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angel Saul - Presentación</title>
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --accent-color: #e74c3c;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-color);
+            color: var(--dark-color);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        
+        .tagline {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+        
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin: 20px auto;
+            object-fit: cover;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .section {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .skill {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .contact-icon {
+            width: 24px;
+            height: 24px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--secondary-color);
+            color: white;
+            border-radius: 10px 10px 0 0;
+            margin-top: 40px;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s;
+        }
+        
+        .social-icon:hover {
+            transform: scale(1.2);
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .tagline {
+                font-size: 1.2rem;
+            }
+            
+            .profile-img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!-- Reemplaza con tu imagen personal -->
+            <img src="https://via.placeholder.com/180" alt="Foto de Angel Saul" class="profile-img">
+            <h1>ANGEL SAUL</h1>
+            <p class="tagline">Desarrollador Web | Diseñador | Profesional Creativo</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <section class="section">
+            <h2>Sobre Mí</h2>
+            <p>Hola, soy Angel Saul. Un apasionado profesional con experiencia en desarrollo web y diseño gráfico. Me especializo en crear soluciones digitales innovadoras que combinan funcionalidad con estética atractiva.</p>
+            <p>Con más de 5 años de experiencia en el campo, he trabajado con diversas tecnologías y frameworks modernos para ofrecer productos de alta calidad que satisfacen las necesidades de los clientes.</p>
+        </section>
+        
+        <section class="section">
+            <h2>Habilidades</h2>
+            <div class="skills">
+                <span class="skill">HTML5</span>
+                <span class="skill">CSS3</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">React</span>
+                <span class="skill">Node.js</span>
+                <span class="skill">Diseño UI/UX</span>
+                <span class="skill">Photoshop</span>
+                <span class="skill">Illustrator</span>
+                <span class="skill">Git</span>
+                <span class="skill">Responsive Design</span>
+            </div>
+        </section>
+        
+        <section class="section">
+            <h2>Experiencia</h2>
+            <h3>Desarrollador Frontend - Empresa XYZ</h3>
+            <p><em>2020 - Presente</em></p>
+            <p>Desarrollo de interfaces de usuario responsivas utilizando React y tecnologías modernas. Colaboración con equipos multidisciplinarios para implementar soluciones web innovadoras.</p>
+            
+            <h3>Diseñador Gráfico - Agencia Creativa ABC</h3>
+            <p><em>2018 - 2020</em></p>
+            <p>Creación de identidades visuales, material publicitario y diseño de interfaces para aplicaciones móviles y web.</p>
+        </section>
+        
+        <section class="section">
+            <h2>Contacto</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/725/725643.png" alt="Email" class="contact-icon">
+                    <span>angel.saul@example.com</span>
+                </div>
+                <div class="contact-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3670/3670051.png" alt="Teléfono" class="contact-icon">
+                    <span>+1 234 567 890</span>
+                </div>
+                <div class="contact-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="LinkedIn" class="contact-icon">
+                    <span>linkedin.com/in/angelsaul</span>
+                </div>
+                <div class="contact-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" class="contact-icon">
+                    <span>github.com/angelsaul</span>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Angel Saul. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" class="social-icon"></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" class="social-icon"></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="LinkedIn" class="social-icon"></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub" class="social-icon"></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram" class="social-icon"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
